@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <style>  html{
+        scroll-behavior: smooth;
+    } 
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+   #lala{
+        background-image:url(Group%2030@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 67vw;
+        width: 100%;
+    }
+       #lalu{
+        background-image:url(Group%2024@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 190vw;
+        width: 100%;
+    }
+      #lole{
+        background-image:url(Group%2029@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 67vw;
+        width: 100%;
+    }
+       #lolo{
+        background-image:url(Web%201920%20%E2%80%93%203@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180vw;
+        width: 100%;
+    }
+  
+      
+    
+          .overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+    text-align: center;
+  left: 0;
+    background-image:url(pexels-kei-scampa-3303491.jpg);
+   /* background-color: #031321;*/
+  /*  
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+    */
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+          .overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right:60px;
+
+  font-size: 40px;
+}
+      @media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+span{
+      position: fixed;
+    top:0;
+    left : 95%;
+    color: solid orange;
+    tab-size: 45%;
+    
+        
+}
+span:hover{
+    background: transparent;
+    box-shadow: 0 0 10px orange, 0 0 40px orange, 0 0 80px orange;
+}
+      .overlay-content {
+  position: absolute;
+    left: 40px;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 10px;
+    text-align: center;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+    font-family: 'Handlee', cursive;
+    text-transform: uppercase;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+      a:hover{
+    color:#255784;
+    background: transparent;
+    box-shadow: 0 0 10px orange, 0 0 40px orange, 0 0 80px orange;
+}
+        </style>
+    </head>
+    <body>
+        
+        
+        <header>
+        
+<div id="myNav" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#lala">home</a>
+           <a href="#lalu">services</a>
+           <a href="#lole">about</a>
+           <a href="#lolo">contact</a>
+        
+        </div>
+        
+        <div id ="lala"></div>
+        <div id="lalu"></div>
+        <div id="lole"></div>
+           <div id="lolo"></div>
+            
+            
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </header>
+        
+        <script>
+       
+    function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    
+      
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+      
+      
+    
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+          
+        
+        </script>
+        
+        
+        
+    </body>
+        </html>
